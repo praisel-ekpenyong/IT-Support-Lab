@@ -107,5 +107,5 @@ Three factors combined to produce the outage:
 
 ## Related Tickets
 
-- [TICKET-003: Unable to Access Shared Drive — lgarcia](../tickets/TICKET-003-shared-drive-access-lgarcia.md)
-- [TICKET-004: Login Failure — kwilliams](../tickets/TICKET-004-login-failure-kwilliams.md)
+- [TICKET-003: Unable to Access Shared Drive — lgarcia](../tickets/TICKET-003.md)
+- [TICKET-004: Login Failure — kwilliams](../tickets/TICKET-004.md)

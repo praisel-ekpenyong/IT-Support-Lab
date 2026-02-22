@@ -10,7 +10,7 @@
 | **Status**         | Closed                                       |
 | **Tags**           | osticket, permissions, agent-access           |
 | **Time to Resolve**| 15 minutes                                   |
-| **Related Lab**    | [Lab 04 - osTicket](../labs/lab-04-osticket.md) |
+| **Related Lab**    | [Lab 04 - osTicket](../labs/04-osticket/) |
 | **Related Incident** | N/A                                        |
 
 ---

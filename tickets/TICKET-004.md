@@ -7,8 +7,8 @@
 | **Environment**    | Windows 11 Pro, Active Directory Domain      |
 | **Tags**           | networking, dns, name-resolution             |
 | **Time to Resolve**| 30 minutes                                   |
-| **Related Lab**    | [Lab 02 - Networking](../labs/lab-02-networking.md) |
-| **Related Incident** | [INC-002 - DNS Resolution Failure](../incidents/INC-002.md) |
+| **Related Lab**    | [Lab 02 - Networking](../labs/02-networking-basics/) |
+| **Related Incident** | [INC-002 - DNS Resolution Failure](../incidents/INC-002-dns-resolution-failure.md) |
 
 ---
 

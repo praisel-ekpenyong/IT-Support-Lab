@@ -118,4 +118,4 @@ The HP Universal Print Driver v7.2.0 had a compatibility issue with the HP Laser
 
 ## Related Tickets
 
-- [TICKET-005: Printer Not Working — Floor 2](../tickets/TICKET-005-printer-not-working-floor2.md)
+- [TICKET-005: Printer Not Working — Floor 2](../tickets/TICKET-005.md)

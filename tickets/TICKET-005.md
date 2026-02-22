@@ -7,8 +7,8 @@
 | **Environment**    | Windows 10 Pro, Network Printer HP LaserJet M607 (Floor 2) |
 | **Tags**           | printer, print-spooler, driver               |
 | **Time to Resolve**| 35 minutes                                   |
-| **Related Lab**    | [Lab 03 - Windows Troubleshooting](../labs/lab-03-windows-troubleshooting.md) |
-| **Related Incident** | [INC-003 - Printer Failure After Driver Update](../incidents/INC-003.md) |
+| **Related Lab**    | [Lab 03 - Windows Troubleshooting](../labs/03-windows-troubleshooting/) |
+| **Related Incident** | [INC-003 - Printer Failure After Driver Update](../incidents/INC-003-printer-driver-update.md) |
 
 ---
 

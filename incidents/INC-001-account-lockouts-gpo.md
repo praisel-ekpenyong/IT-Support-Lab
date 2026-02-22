@@ -102,5 +102,5 @@ Two contributing factors combined to cause the mass lockout:
 
 ## Related Tickets
 
-- [TICKET-001: Password Reset — jsmith](../tickets/TICKET-001-password-reset-jsmith.md)
-- [TICKET-007: Account Lockout — mjones](../tickets/TICKET-007-account-lockout-mjones.md)
+- [TICKET-001: Password Reset — jsmith](../tickets/TICKET-001.md)
+- [TICKET-007: Account Lockout — mjones](../tickets/TICKET-007.md)

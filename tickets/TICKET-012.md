@@ -10,8 +10,8 @@
 | **Status**         | Closed                                       |
 | **Tags**           | powershell, disk-space, automation, reporting |
 | **Time to Resolve**| 50 minutes                                   |
-| **Related Lab**    | [Lab 05 - PowerShell](../labs/lab-05-powershell.md) |
-| **Related Incident** | [INC-004 - Slow PC / Disk Space Issue](../incidents/INC-004.md) |
+| **Related Lab**    | [Lab 05 - PowerShell](../labs/05-powershell-basics/) |
+| **Related Incident** | [INC-004 - Slow PC / Disk Space Issue](../incidents/INC-004-slow-pc-disk-space.md) |
 
 ---
 

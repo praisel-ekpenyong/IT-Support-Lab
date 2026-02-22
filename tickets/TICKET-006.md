@@ -7,8 +7,8 @@
 | **Environment**    | Windows 10 Pro, Intel i5, 8 GB RAM, 256 GB SSD |
 | **Tags**           | performance, disk-space, windows-troubleshooting |
 | **Time to Resolve**| 45 minutes                                   |
-| **Related Lab**    | [Lab 03 - Windows Troubleshooting](../labs/lab-03-windows-troubleshooting.md) |
-| **Related Incident** | [INC-004 - Slow PC Due to Low Disk Space](../incidents/INC-004.md) |
+| **Related Lab**    | [Lab 03 - Windows Troubleshooting](../labs/03-windows-troubleshooting/) |
+| **Related Incident** | [INC-004 - Slow PC Due to Low Disk Space](../incidents/INC-004-slow-pc-disk-space.md) |
 
 ---
 

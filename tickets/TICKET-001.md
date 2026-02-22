@@ -7,8 +7,8 @@
 | **Environment**    | Windows 10 Pro, Active Directory Domain      |
 | **Tags**           | active-directory, password-reset, account-lockout |
 | **Time to Resolve**| 15 minutes                                   |
-| **Related Lab**    | [Lab 01 - Active Directory](../labs/lab-01-active-directory.md) |
-| **Related Incident** | [INC-001 - Account Lockouts After GPO Change](../incidents/INC-001.md) |
+| **Related Lab**    | [Lab 01 - Active Directory](../labs/01-active-directory-basics/) |
+| **Related Incident** | [INC-001 - Account Lockouts After GPO Change](../incidents/INC-001-account-lockouts-gpo.md) |
 
 ---
 

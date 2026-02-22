@@ -10,7 +10,7 @@
 | **Status**         | Closed                                       |
 | **Tags**           | active-directory, user-provisioning, onboarding |
 | **Time to Resolve**| 30 minutes                                   |
-| **Related Lab**    | [Lab 01 - Active Directory](../labs/lab-01-active-directory.md) |
+| **Related Lab**    | [Lab 01 - Active Directory](../labs/01-active-directory-basics/) |
 | **Related Incident** | N/A                                        |
 
 ---

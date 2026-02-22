@@ -10,7 +10,7 @@
 | **Status**         | Closed                                       |
 | **Tags**           | networking, vpn, remote-work                 |
 | **Time to Resolve**| 40 minutes                                   |
-| **Related Lab**    | [Lab 02 - Networking](../labs/lab-02-networking.md) |
+| **Related Lab**    | [Lab 02 - Networking](../labs/02-networking-basics/) |
 | **Related Incident** | N/A                                        |
 
 ---

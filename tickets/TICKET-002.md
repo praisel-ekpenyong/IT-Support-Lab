@@ -7,7 +7,7 @@
 | **Environment**    | Windows 10 Pro, Active Directory Domain, File Server `FS01` |
 | **Tags**           | active-directory, file-shares, permissions   |
 | **Time to Resolve**| 20 minutes                                   |
-| **Related Lab**    | [Lab 01 - Active Directory](../labs/lab-01-active-directory.md) |
+| **Related Lab**    | [Lab 01 - Active Directory](../labs/01-active-directory-basics/) |
 | **Related Incident** | N/A                                        |
 
 ---

@@ -10,7 +10,7 @@
 | **Status**         | Closed                                       |
 | **Tags**           | windows-troubleshooting, bsod, system-repair |
 | **Time to Resolve**| 60 minutes                                   |
-| **Related Lab**    | [Lab 03 - Windows Troubleshooting](../labs/lab-03-windows-troubleshooting.md) |
+| **Related Lab**    | [Lab 03 - Windows Troubleshooting](../labs/03-windows-troubleshooting/) |
 | **Related Incident** | N/A                                        |
 
 ---

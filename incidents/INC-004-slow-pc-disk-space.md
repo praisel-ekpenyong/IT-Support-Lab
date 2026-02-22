@@ -127,5 +127,5 @@ Multiple contributing factors led to the disk space exhaustion:
 
 ## Related Tickets
 
-- [TICKET-006: Slow PC — asingh](../tickets/TICKET-006-slow-pc-asingh.md)
-- [TICKET-012: Disk Space Alert — Sales PCs](../tickets/TICKET-012-disk-space-alert-sales.md)
+- [TICKET-006: Slow PC — asingh](../tickets/TICKET-006.md)
+- [TICKET-012: Disk Space Alert — Sales PCs](../tickets/TICKET-012.md)
