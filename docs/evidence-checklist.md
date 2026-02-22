@@ -4,6 +4,25 @@ Use this checklist to track screenshots and outputs captured for each lab. Mark 
 
 ---
 
+## Lab 00: Lab Setup
+
+| # | Evidence Item | Filename | Captured |
+|---|---|---|---|
+| 1 | VirtualBox Manager showing all three VMs listed | `lab00-step01-vbox-manager.png` | ☐ |
+| 2 | DC-SERVER01 VM settings (CPU, RAM, disk) | `lab00-step02-dc-vm-specs.png` | ☐ |
+| 3 | WS-CLIENT01 VM settings (CPU, RAM, disk) | `lab00-step03-client-vm-specs.png` | ☐ |
+| 4 | UBUNTU-SVR01 VM settings (CPU, RAM, disk) | `lab00-step04-ubuntu-vm-specs.png` | ☐ |
+| 5 | Network adapter config showing NAT and Internal Network | `lab00-step05-network-adapters.png` | ☐ |
+| 6 | DC-SERVER01 static IP (`ipconfig /all`) | `lab00-step06-dc-static-ip.png` | ☐ |
+| 7 | WS-CLIENT01 static IP (`ipconfig /all`) | `lab00-step07-client-static-ip.png` | ☐ |
+| 8 | UBUNTU-SVR01 static IP (`ip addr show`) | `lab00-step08-ubuntu-static-ip.png` | ☐ |
+| 9 | Ping test — Server to Client | `lab00-step09-ping-server-client.png` | ☐ |
+| 10 | Ping test — Client to Server | `lab00-step10-ping-client-server.png` | ☐ |
+| 11 | Ping test — Ubuntu to Server | `lab00-step11-ping-ubuntu-server.png` | ☐ |
+| 12 | Internet connectivity from any VM | `lab00-step12-internet-test.png` | ☐ |
+
+---
+
 ## Lab 01: Active Directory Basics
 
 | # | Evidence Item | Filename | Captured |

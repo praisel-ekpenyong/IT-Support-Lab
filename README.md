@@ -2,11 +2,11 @@
 
 ## Hiring Manager Quick Start
 
-This portfolio demonstrates hands-on IT support skills through 5 structured labs, 12 sample helpdesk tickets, 4 simulated incident responses, and 3 PowerShell automation scripts. All work was completed in virtualized lab environments. Click any link below to dive in.
+This portfolio demonstrates hands-on IT support skills through 6 structured labs, 12 sample helpdesk tickets, 4 simulated incident responses, and 3 PowerShell automation scripts. All work was completed in virtualized lab environments. Click any link below to dive in.
 
 | What | Count | Link |
 |------|-------|------|
-| Labs | 5 | [View Labs](labs/) |
+| Labs | 6 | [View Labs](labs/) |
 | Tickets | 12 | [View Tickets](tickets/) |
 | Incidents | 4 | [View Incidents](incidents/) |
 | Scripts | 3 | [View Scripts](scripts/) |
@@ -18,6 +18,7 @@ This portfolio demonstrates hands-on IT support skills through 5 structured labs
 
 | Lab | Description | Link |
 |-----|-------------|------|
+| Lab 00: Lab Setup | VirtualBox installation, VM provisioning, internal networking | [View Lab](labs/00-lab-setup/) |
 | Lab 01: Active Directory Basics | AD DS, DNS, GPO, file shares, domain join | [View Lab](labs/01-active-directory-basics/) |
 | Lab 02: Networking Basics | IP addressing, subnetting, diagnostics, troubleshooting | [View Lab](labs/02-networking-basics/) |
 | Lab 03: Windows Troubleshooting | Event Viewer, services, SFC/DISM, printer fix, remote support | [View Lab](labs/03-windows-troubleshooting/) |
@@ -37,6 +38,7 @@ Tickets and incidents are cross-referenced where applicable, linking related sce
 ```
 ├── README.md
 ├── labs/
+│   ├── 00-lab-setup/
 │   ├── 01-active-directory-basics/
 │   ├── 02-networking-basics/
 │   ├── 03-windows-troubleshooting/
