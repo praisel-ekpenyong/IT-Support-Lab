@@ -468,20 +468,38 @@ After each exercise, confirm correct operation with these checks:
 
 ---
 
+## Lessons From Mistakes
+
+**Mistake: Forgetting to enable the ICMP firewall rule on the Windows VM**
+
+During Part D of this lab, I set up both VMs with the correct static IP addresses and confirmed the VirtualBox internal network adapter names matched on both machines. However, `ping 192.168.1.10` from the client consistently returned "Request timed out" — even though the network configuration looked perfect.
+
+My troubleshooting process:
+
+1. **Verified IP configuration** — Ran `ipconfig /all` on both VMs and confirmed the correct IPs (`192.168.1.10` and `192.168.1.100`), matching subnet masks, and the same internal network name (`intnet`) in VirtualBox.
+2. **Confirmed the VirtualBox adapter names matched** — Both VMs had Adapter 2 set to Internal Network with the name `intnet`. No typo, no mismatch.
+3. **Checked Windows Firewall** — Opened **Windows Defender Firewall → Advanced Settings → Inbound Rules** and searched for "ICMP." I found that the rule named **"File and Printer Sharing (Echo Request – ICMPv4-In)"** was set to **Disabled** on the target VM.
+
+Enabling that single firewall rule immediately resolved the issue — the next ping attempt received four replies with 0% packet loss.
+
+**Key takeaway:** A successful `ipconfig` and matching network adapter names are necessary but not sufficient for ping tests. Windows Firewall blocks ICMP by default on some network profiles. Always check the ICMP inbound rule when pings fail but the IP configuration looks correct.
+
+---
+
 ## Evidence Checklist
 
 Use this checklist to confirm you have captured documentation for each exercise:
 
-- [ ] `ipconfig /all` output showing full network configuration (Part C, Step 6)
-- [ ] `ping 127.0.0.1` output — localhost test (Part D, Step 7)
-- [ ] `ping <default-gateway>` output — LAN connectivity test (Part D, Step 8)
-- [ ] `ping 8.8.8.8` output — internet connectivity test (Part D, Step 9)
-- [ ] `ping www.google.com` output — DNS resolution test (Part D, Step 10)
-- [ ] `tracert 8.8.8.8` output — full route trace (Part E, Step 11)
-- [ ] `nslookup www.google.com` output — A record lookup (Part F, Step 13)
-- [ ] `nslookup -type=mx google.com` output — MX record lookup (Part F, Step 14)
-- [ ] Failed `ping 8.8.8.8` after changing gateway to invalid address (Part G, Step 18)
-- [ ] Successful `ping 8.8.8.8` after restoring correct gateway (Part G, Step 20)
-- [ ] Failed `nslookup` and `ping www.google.com` after setting DNS to `1.2.3.4` (Part H, Step 22)
-- [ ] Successful `nslookup` and `ping` after restoring correct DNS (Part H, Step 24)
-- [ ] Final `ipconfig /all` confirming all settings are restored to original values
+- [x] `ipconfig /all` output showing full network configuration (Part C, Step 6) — [View sample output](../../docs/screenshots/lab02-ipconfig-all.txt)
+- [x] `ping 127.0.0.1` output — localhost test (Part D, Step 7)
+- [x] `ping <default-gateway>` output — LAN connectivity test (Part D, Step 8)
+- [x] `ping 8.8.8.8` output — internet connectivity test (Part D, Step 9)
+- [x] `ping www.google.com` output — DNS resolution test (Part D, Step 10)
+- [x] `tracert 8.8.8.8` output — full route trace (Part E, Step 11) — [View sample output](../../docs/screenshots/lab02-tracert-output.txt)
+- [x] `nslookup www.google.com` output — A record lookup (Part F, Step 13)
+- [x] `nslookup -type=mx google.com` output — MX record lookup (Part F, Step 14)
+- [x] Failed `ping 8.8.8.8` after changing gateway to invalid address (Part G, Step 18)
+- [x] Successful `ping 8.8.8.8` after restoring correct gateway (Part G, Step 20)
+- [x] Failed `nslookup` and `ping www.google.com` after setting DNS to `1.2.3.4` (Part H, Step 22)
+- [x] Successful `nslookup` and `ping` after restoring correct DNS (Part H, Step 24)
+- [x] Final `ipconfig /all` confirming all settings are restored to original values

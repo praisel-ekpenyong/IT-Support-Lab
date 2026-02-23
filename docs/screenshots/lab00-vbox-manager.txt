@@ -1,0 +1,16 @@
+# Simulated output — IT Support Lab Portfolio
+# Replace this with actual command output from your lab environment
+
+[SCREENSHOT PLACEHOLDER]
+VirtualBox Manager — main window showing all 3 VMs listed:
+
+  Name            State       Session State
+  --------------  ----------  -------------
+  DC-SERVER01     Powered Off  Spawning
+  WS-CLIENT01     Powered Off  Spawning
+  UBUNTU-SVR01    Powered Off  Spawning
+
+Expected: All three VMs (DC-SERVER01, WS-CLIENT01, UBUNTU-SVR01) are visible
+in the VirtualBox Manager window with their correct names and statuses.
+Replace this file with an actual screenshot (.png) of the VirtualBox Manager
+showing all three VMs.

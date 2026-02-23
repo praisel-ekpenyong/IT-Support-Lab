@@ -1,0 +1,23 @@
+# Simulated output — IT Support Lab Portfolio
+# Replace this with actual command output from your lab environment
+
+PS C:\Users\Administrator> Get-ADOrganizationalUnit -Filter * | Select-Object Name, DistinguishedName | Format-Table -AutoSize
+
+Name               DistinguishedName
+----               -----------------
+Domain Controllers OU=Domain Controllers,DC=homelab,DC=local
+IT                 OU=IT,DC=homelab,DC=local
+HR                 OU=HR,DC=homelab,DC=local
+Finance            OU=Finance,DC=homelab,DC=local
+Disabled_Accounts  OU=Disabled_Accounts,DC=homelab,DC=local
+
+
+PS C:\Users\Administrator> Get-ADUser -Filter * | Select-Object Name, SamAccountName, Enabled | Format-Table -AutoSize
+
+Name           SamAccountName  Enabled
+----           --------------  -------
+Administrator  Administrator    True
+John Smith     jsmith           True
+Alice Johnson  ajohnson         True
+Bob Martinez   bmartinez        True
+Carol Davis    cdavis           True

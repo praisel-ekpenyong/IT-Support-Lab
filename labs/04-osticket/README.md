@@ -680,4 +680,6 @@ Capture the following screenshots to document your lab work:
 | 13 | Agent reply using canned response | Canned response inserted into ticket reply |
 | 14 | Ticket resolved and closed | Ticket status showing "Closed" with full thread history |
 | 15 | SLA timer on a SEV-A ticket | Due date showing 1-hour deadline with countdown |
-| 16 | Apache error log (clean) | `tail` output showing no critical errors |
+| 16 | Apache error log (clean) | `tail` output showing no critical errors — [View sample output](../../docs/screenshots/lab04-osticket-install-check.txt) |
+
+- [x] All 16 evidence items above captured and available in `docs/screenshots/`

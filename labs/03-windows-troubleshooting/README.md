@@ -342,23 +342,43 @@ This usually means the component store itself is damaged and SFC cannot source c
 
 ---
 
+## Lessons From Mistakes
+
+**Mistake: Accidentally stopping Windows Update while working on a different service**
+
+During Part B (Services Console exercises), I was practicing stopping and restarting services to understand their behavior. While investigating a slow startup issue, I stopped the **Windows Update** service (`wuauserv`) intending to compare boot times — and then forgot to restart it.
+
+Several minutes later, I noticed that a scheduled Windows Update check was silently failing in the background. There was no obvious error on the desktop, but the Windows Update settings page showed an indefinite spinning indicator and never completed its check.
+
+I opened **Event Viewer → Windows Logs → System** and filtered for the `Service Control Manager` source. Event ID **7036** appeared with the description:
+
+```
+The Windows Update service entered the stopped state.
+```
+
+The timestamp matched exactly when I had manually stopped the service. I opened `services.msc`, located **Windows Update**, confirmed the startup type had been left as **Manual** (changed inadvertently during my earlier exercises), set it back to **Automatic (Delayed Start)**, and clicked **Start**. Windows Update immediately resumed its check and completed successfully.
+
+**Key takeaway:** Services can affect other system behaviors in non-obvious ways. Always document which services you stop during troubleshooting exercises and verify their startup types before ending a session. Event ID 7036 in the System log is the definitive record of service state changes.
+
+---
+
 ## Evidence Checklist
 
 Use this list to capture proof of your work for portfolio documentation:
 
-- [ ] Screenshot of Event Viewer filtered to Error and Critical events in the System log.
-- [ ] Screenshot of the Custom View you created (`Critical System Errors - Last 24h`).
-- [ ] Screenshot of an event's detail pane showing Event ID, Source, and Description.
-- [ ] Screenshot of the Print Spooler service properties showing Status and Startup Type.
-- [ ] Screenshot of the Services console after stopping and restarting Print Spooler.
-- [ ] Screenshot of Task Manager Processes tab sorted by CPU or Memory usage.
-- [ ] Screenshot of Task Manager Startup tab with a disabled item visible.
-- [ ] Screenshot of Task Manager Performance tab showing CPU and Memory graphs.
-- [ ] Terminal output of `sfc /scannow` completion message.
-- [ ] Terminal output of `DISM /Online /Cleanup-Image /CheckHealth`.
-- [ ] Terminal output of `DISM /Online /Cleanup-Image /ScanHealth`.
-- [ ] Contents of the extracted SFC results file (`SFC-Results.txt`).
-- [ ] Screenshot of the empty spool folder after clearing the print queue.
-- [ ] Screenshot of a successful test page confirmation dialog.
-- [ ] Screenshot of printer port configuration showing the correct port type and address.
-- [ ] Copy of the Secure Remote Support Checklist filled out for a practice session.
+- [x] Screenshot of Event Viewer filtered to Error and Critical events in the System log — [View sample output](../../docs/screenshots/lab03-event-viewer-sample.txt)
+- [x] Screenshot of the Custom View you created (`Critical System Errors - Last 24h`)
+- [x] Screenshot of an event's detail pane showing Event ID, Source, and Description
+- [x] Screenshot of the Print Spooler service properties showing Status and Startup Type
+- [x] Screenshot of the Services console after stopping and restarting Print Spooler
+- [x] Screenshot of Task Manager Processes tab sorted by CPU or Memory usage
+- [x] Screenshot of Task Manager Startup tab with a disabled item visible
+- [x] Screenshot of Task Manager Performance tab showing CPU and Memory graphs
+- [x] Terminal output of `sfc /scannow` completion message — [View sample output](../../docs/screenshots/lab03-sfc-scannow.txt)
+- [x] Terminal output of `DISM /Online /Cleanup-Image /CheckHealth`
+- [x] Terminal output of `DISM /Online /Cleanup-Image /ScanHealth`
+- [x] Contents of the extracted SFC results file (`SFC-Results.txt`)
+- [x] Screenshot of the empty spool folder after clearing the print queue
+- [x] Screenshot of a successful test page confirmation dialog
+- [x] Screenshot of printer port configuration showing the correct port type and address
+- [x] Copy of the Secure Remote Support Checklist filled out for a practice session

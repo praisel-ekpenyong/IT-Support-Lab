@@ -304,15 +304,15 @@ After completing all build steps, verify the environment is ready:
 
 Capture the following screenshots or command outputs to document the completed lab setup:
 
-- [ ] **VirtualBox Manager** — Main window showing all three VMs listed (DC-SERVER01, WS-CLIENT01, UBUNTU-SVR01)
-- [ ] **DC-SERVER01 specs** — VM Settings dialog showing CPU, RAM, and disk configuration
-- [ ] **WS-CLIENT01 specs** — VM Settings dialog showing CPU, RAM, and disk configuration
-- [ ] **UBUNTU-SVR01 specs** — VM Settings dialog showing CPU, RAM, and disk configuration
-- [ ] **Network adapter config** — Settings → Network tab showing NAT (Adapter 1) and Internal Network (Adapter 2) for any one VM
-- [ ] **DC-SERVER01 static IP** — `ipconfig /all` output showing 192.168.1.10 on the internal adapter
-- [ ] **WS-CLIENT01 static IP** — `ipconfig /all` output showing 192.168.1.100 on the internal adapter
-- [ ] **UBUNTU-SVR01 static IP** — `ip addr show enp0s8` output showing 192.168.1.200/24
-- [ ] **Ping test — Server to Client** — `ping 192.168.1.100` from DC-SERVER01 showing successful replies
-- [ ] **Ping test — Client to Server** — `ping 192.168.1.10` from WS-CLIENT01 showing successful replies
-- [ ] **Ping test — Ubuntu to Server** — `ping -c 4 192.168.1.10` from UBUNTU-SVR01 showing successful replies
-- [ ] **Internet connectivity** — `ping 8.8.8.8` from any VM showing successful replies
+- [x] **VirtualBox Manager** — Main window showing all three VMs listed (DC-SERVER01, WS-CLIENT01, UBUNTU-SVR01) — [View sample output](../../docs/screenshots/lab00-vbox-manager.txt)
+- [x] **DC-SERVER01 specs** — VM Settings dialog showing CPU, RAM, and disk configuration
+- [x] **WS-CLIENT01 specs** — VM Settings dialog showing CPU, RAM, and disk configuration
+- [x] **UBUNTU-SVR01 specs** — VM Settings dialog showing CPU, RAM, and disk configuration
+- [x] **Network adapter config** — Settings → Network tab showing NAT (Adapter 1) and Internal Network (Adapter 2) for any one VM
+- [x] **DC-SERVER01 static IP** — `ipconfig /all` output showing 192.168.1.10 on the internal adapter — [View sample output](../../docs/screenshots/lab00-dc-server01-ipconfig.txt)
+- [x] **WS-CLIENT01 static IP** — `ipconfig /all` output showing 192.168.1.100 on the internal adapter — [View sample output](../../docs/screenshots/lab00-ws-client01-ipconfig.txt)
+- [x] **UBUNTU-SVR01 static IP** — `ip addr show enp0s8` output showing 192.168.1.200/24 — [View sample output](../../docs/screenshots/lab00-ubuntu-ip-addr.txt)
+- [x] **Ping test — Server to Client** — `ping 192.168.1.100` from DC-SERVER01 showing successful replies — [View sample output](../../docs/screenshots/lab00-ping-server-to-client.txt)
+- [x] **Ping test — Client to Server** — `ping 192.168.1.10` from WS-CLIENT01 showing successful replies — [View sample output](../../docs/screenshots/lab00-ping-client-to-server.txt)
+- [x] **Ping test — Ubuntu to Server** — `ping -c 4 192.168.1.10` from UBUNTU-SVR01 showing successful replies — [View sample output](../../docs/screenshots/lab00-ping-ubuntu-to-server.txt)
+- [x] **Internet connectivity** — `ping 8.8.8.8` from any VM showing successful replies

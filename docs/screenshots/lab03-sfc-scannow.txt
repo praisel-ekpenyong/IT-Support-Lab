@@ -1,0 +1,11 @@
+# Simulated output — IT Support Lab Portfolio
+# Replace this with actual command output from your lab environment
+
+C:\Windows\system32>sfc /scannow
+
+Beginning system scan.  This process will take some time.
+
+Beginning verification phase of system scan.
+Verification 100% complete.
+
+Windows Resource Protection did not find any integrity violations.

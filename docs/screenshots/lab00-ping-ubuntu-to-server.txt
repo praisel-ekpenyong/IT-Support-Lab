@@ -1,0 +1,13 @@
+# Simulated output — IT Support Lab Portfolio
+# Replace this with actual command output from your lab environment
+
+labadmin@UBUNTU-SVR01:~$ ping -c 4 192.168.1.10
+PING 192.168.1.10 (192.168.1.10) 56(84) bytes of data.
+64 bytes from 192.168.1.10: icmp_seq=1 ttl=128 time=0.452 ms
+64 bytes from 192.168.1.10: icmp_seq=2 ttl=128 time=0.381 ms
+64 bytes from 192.168.1.10: icmp_seq=3 ttl=128 time=0.412 ms
+64 bytes from 192.168.1.10: icmp_seq=4 ttl=128 time=0.398 ms
+
+--- 192.168.1.10 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3070ms
+rtt min/avg/max/mdev = 0.381/0.410/0.452/0.026 ms

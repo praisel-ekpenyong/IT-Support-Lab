@@ -1,0 +1,42 @@
+# Simulated output — IT Support Lab Portfolio
+# Replace this with actual command output from your lab environment
+
+Event Viewer — System Log export (filtered: Error and Critical, last 24 hours)
+
+--------------------------------------------------------------------------------
+Log Name:      System
+Source:        Service Control Manager
+Date:          1/15/2025 9:04:22 AM
+Event ID:      7036
+Task Category: None
+Level:         Information
+Keywords:      Classic
+User:          N/A
+Computer:      WS-CLIENT01
+Description:
+The Print Spooler service entered the stopped state.
+--------------------------------------------------------------------------------
+Log Name:      System
+Source:        Service Control Manager
+Date:          1/15/2025 9:04:25 AM
+Event ID:      7036
+Task Category: None
+Level:         Information
+Keywords:      Classic
+User:          N/A
+Computer:      WS-CLIENT01
+Description:
+The Print Spooler service entered the running state.
+--------------------------------------------------------------------------------
+Log Name:      System
+Source:        Disk
+Date:          1/15/2025 8:55:10 AM
+Event ID:      7
+Task Category: None
+Level:         Error
+Keywords:      Classic
+User:          N/A
+Computer:      WS-CLIENT01
+Description:
+The device, \Device\Harddisk0\DR0, has a bad block.
+--------------------------------------------------------------------------------
