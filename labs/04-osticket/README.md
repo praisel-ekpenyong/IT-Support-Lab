@@ -682,4 +682,4 @@ Capture the following screenshots to document your lab work:
 | 15 | SLA timer on a SEV-A ticket | Due date showing 1-hour deadline with countdown |
 | 16 | Apache error log (clean) | `tail` output showing no critical errors — [View sample output](../../docs/screenshots/lab04-osticket-install-check.txt) |
 
-- [x] All 16 evidence items above captured and available in `docs/screenshots/`
+- [ ] All 16 evidence items above captured and available in `docs/screenshots/`
