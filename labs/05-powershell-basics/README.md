@@ -39,15 +39,15 @@ These scripts mirror real tasks that appear in day-to-day IT support work—moni
 ┌──────────────────────────────────────────────────┐
 │              Windows Workstation / Server         │
 │                                                    │
-│   ┌──────────────┐    ┌────────────────────────┐  │
-│   │  PowerShell   │───▶│  Console Output         │  │
+│   ┌─────────────-─┐    ┌────────────────────────┐  │
+│   │  PowerShell   │───▶│  Console Output        │  │
 │   │  (Admin)      │    └────────────────────────┘  │
 │   │               │                                 │
 │   │  Scripts:     │    ┌────────────────────────┐  │
 │   │  1. DiskSpace │───▶│  C:\Scripts\Output\     │  │
 │   │  2. EventLogs │    │   ├─ DiskReport.csv     │  │
 │   │  3. ResetPwd  │    │   ├─ EventErrors.csv    │  │
-│   └──────────────┘    │   └─ ResetLog.txt        │  │
+│   └───────────-───┘    │   └─ ResetLog.txt        │  │
 │                        └────────────────────────┘  │
 └──────────────────────────────────────────────────┘
 ```
@@ -611,4 +611,4 @@ Capture the following screenshots or text outputs to document your lab work.
 | 9 | Password reset — log file | Screenshot of `Get-Content .\Output\ResetLog.txt` |
 | 10 | Cleanup confirmation | Screenshot showing test user removed or VM snapshot restored |
 
-- [x] All 10 evidence items above captured and available in `docs/screenshots/`
+- [ ] All 10 evidence items above captured and available in `docs/screenshots/`
