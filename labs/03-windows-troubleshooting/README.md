@@ -366,19 +366,19 @@ The timestamp matched exactly when I had manually stopped the service. I opened 
 
 Use this list to capture proof of your work for portfolio documentation:
 
-- [x] Screenshot of Event Viewer filtered to Error and Critical events in the System log — [View sample output](../../docs/screenshots/lab03-event-viewer-sample.txt)
-- [x] Screenshot of the Custom View you created (`Critical System Errors - Last 24h`)
-- [x] Screenshot of an event's detail pane showing Event ID, Source, and Description
-- [x] Screenshot of the Print Spooler service properties showing Status and Startup Type
-- [x] Screenshot of the Services console after stopping and restarting Print Spooler
-- [x] Screenshot of Task Manager Processes tab sorted by CPU or Memory usage
-- [x] Screenshot of Task Manager Startup tab with a disabled item visible
-- [x] Screenshot of Task Manager Performance tab showing CPU and Memory graphs
-- [x] Terminal output of `sfc /scannow` completion message — [View sample output](../../docs/screenshots/lab03-sfc-scannow.txt)
-- [x] Terminal output of `DISM /Online /Cleanup-Image /CheckHealth`
-- [x] Terminal output of `DISM /Online /Cleanup-Image /ScanHealth`
-- [x] Contents of the extracted SFC results file (`SFC-Results.txt`)
-- [x] Screenshot of the empty spool folder after clearing the print queue
-- [x] Screenshot of a successful test page confirmation dialog
-- [x] Screenshot of printer port configuration showing the correct port type and address
-- [x] Copy of the Secure Remote Support Checklist filled out for a practice session
+- [ ] Screenshot of Event Viewer filtered to Error and Critical events in the System log — [View sample output](../../docs/screenshots/lab03-event-viewer-sample.txt)
+- [ ] Screenshot of the Custom View you created (`Critical System Errors - Last 24h`)
+- [ ] Screenshot of an event's detail pane showing Event ID, Source, and Description
+- [ ] Screenshot of the Print Spooler service properties showing Status and Startup Type
+- [ ] Screenshot of the Services console after stopping and restarting Print Spooler
+- [ ] Screenshot of Task Manager Processes tab sorted by CPU or Memory usage
+- [ ] Screenshot of Task Manager Startup tab with a disabled item visible
+- [ ] Screenshot of Task Manager Performance tab showing CPU and Memory graphs
+- [ ] Terminal output of `sfc /scannow` completion message — [View sample output](../../docs/screenshots/lab03-sfc-scannow.txt)
+- [ ] Terminal output of `DISM /Online /Cleanup-Image /CheckHealth`
+- [ ] Terminal output of `DISM /Online /Cleanup-Image /ScanHealth`
+- [ ] Contents of the extracted SFC results file (`SFC-Results.txt`)
+- [ ] Screenshot of the empty spool folder after clearing the print queue
+- [ ] Screenshot of a successful test page confirmation dialog
+- [ ] Screenshot of printer port configuration showing the correct port type and address
+- [ ] Copy of the Secure Remote Support Checklist filled out for a practice session
