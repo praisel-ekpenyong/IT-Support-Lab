@@ -308,18 +308,18 @@ The response came back from `8.8.8.8` instead of `192.168.1.10`, and there was n
 
 Capture the following screenshots or command outputs to document the completed lab:
 
-- [x] **AD DS role installed** — Server Manager dashboard showing AD DS and DNS roles with green status indicators
-- [x] **Domain Controller promotion** — `Get-ADDomainController` output showing `DC-SERVER01` as a Global Catalog server for `homelab.local`
-- [x] **OU structure** — ADUC tree view expanded to show IT, HR, Finance, and Disabled_Accounts OUs — [View sample output](../../docs/screenshots/lab01-ad-users-ou.txt)
-- [x] **Users created** — `Get-ADUser -Filter * | Select-Object Name, SamAccountName, Enabled` output listing all four sample users — [View sample output](../../docs/screenshots/lab01-ad-users-ou.txt)
-- [x] **Group membership** — `Get-ADGroupMember -Identity "SG_IT_Staff"` output showing jsmith and ajohnson
-- [x] **GPO linked** — GPMC showing "Password and Lockout Policy" linked to `homelab.local` with settings visible in the Settings tab
-- [x] **Password policy applied** — `net accounts` output on the DC showing minimum length 10 and lockout threshold 5
-- [x] **GPO applied on client** — `gpresult /r` output from the client showing the GPO under "Applied Group Policy Objects" — [View sample output](../../docs/screenshots/lab01-gpresult-output.txt)
-- [x] **Shared folder permissions** — Properties dialog for `Finance_Reports` showing both Share and NTFS permission entries
-- [x] **Client DNS configured** — `ipconfig /all` output from the client showing DNS server `192.168.1.10`
-- [x] **Successful domain join** — `systeminfo | findstr Domain` output from the client showing `homelab.local`
-- [x] **Domain user login** — Desktop screenshot of the client logged in as `HOMELAB\jsmith` (visible via `whoami` output)
-- [x] **Share access verified** — File Explorer on the client showing `\\DC-SERVER01\Finance_Reports` opened as `cdavis`
-- [x] **Account lockout test** — `Get-ADUser jsmith -Properties LockedOut` showing `LockedOut: True` after five failed attempts, followed by a successful `Unlock-ADAccount` command
-- [x] **DNS resolution** — `nslookup homelab.local` resolving to 192.168.1.10 — [View sample output](../../docs/screenshots/lab01-dns-nslookup.txt)
+- [ ] **AD DS role installed** — Server Manager dashboard showing AD DS and DNS roles with green status indicators
+- [ ] **Domain Controller promotion** — `Get-ADDomainController` output showing `DC-SERVER01` as a Global Catalog server for `homelab.local`
+- [ ] **OU structure** — ADUC tree view expanded to show IT, HR, Finance, and Disabled_Accounts OUs — [View sample output](../../docs/screenshots/lab01-ad-users-ou.txt)
+- [ ] **Users created** — `Get-ADUser -Filter * | Select-Object Name, SamAccountName, Enabled` output listing all four sample users — [View sample output](../../docs/screenshots/lab01-ad-users-ou.txt)
+- [ ] **Group membership** — `Get-ADGroupMember -Identity "SG_IT_Staff"` output showing jsmith and ajohnson
+- [ ] **GPO linked** — GPMC showing "Password and Lockout Policy" linked to `homelab.local` with settings visible in the Settings tab
+- [ ] **Password policy applied** — `net accounts` output on the DC showing minimum length 10 and lockout threshold 5
+- [ ] **GPO applied on client** — `gpresult /r` output from the client showing the GPO under "Applied Group Policy Objects" — [View sample output](../../docs/screenshots/lab01-gpresult-output.txt)
+- [ ] **Shared folder permissions** — Properties dialog for `Finance_Reports` showing both Share and NTFS permission entries
+- [ ] **Client DNS configured** — `ipconfig /all` output from the client showing DNS server `192.168.1.10`
+- [ ] **Successful domain join** — `systeminfo | findstr Domain` output from the client showing `homelab.local`
+- [ ] **Domain user login** — Desktop screenshot of the client logged in as `HOMELAB\jsmith` (visible via `whoami` output)
+- [ ] **Share access verified** — File Explorer on the client showing `\\DC-SERVER01\Finance_Reports` opened as `cdavis`
+- [ ] **Account lockout test** — `Get-ADUser jsmith -Properties LockedOut` showing `LockedOut: True` after five failed attempts, followed by a successful `Unlock-ADAccount` command
+- [ ] **DNS resolution** — `nslookup homelab.local` resolving to 192.168.1.10 — [View sample output](../../docs/screenshots/lab01-dns-nslookup.txt)
