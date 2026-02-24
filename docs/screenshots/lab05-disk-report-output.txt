@@ -1,0 +1,20 @@
+# Simulated output — IT Support Lab Portfolio
+# Replace this with actual command output from your lab environment
+
+PS C:\Scripts> .\Get-DiskSpaceReport.ps1
+
+Drive VolumeName TotalGB FreeGB PercentFree Status
+----- ---------- ------- ------ ----------- ------
+C:    Windows    237.88  102.45        43.1 OK
+D:    Data        99.99   22.10        22.1 OK
+E:    Backup      49.99    3.20         6.4 CRITICAL
+
+
+PS C:\Scripts> .\Get-DiskSpaceReport.ps1 -ExportCsv
+Drive VolumeName TotalGB FreeGB PercentFree Status
+----- ---------- ------- ------ ----------- ------
+C:    Windows    237.88  102.45        43.1 OK
+D:    Data        99.99   22.10        22.1 OK
+E:    Backup      49.99    3.20         6.4 CRITICAL
+
+Report exported to C:\Scripts\Output\DiskReport.csv

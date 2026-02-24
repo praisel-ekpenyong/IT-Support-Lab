@@ -39,15 +39,15 @@ These scripts mirror real tasks that appear in day-to-day IT support work—moni
 ┌──────────────────────────────────────────────────┐
 │              Windows Workstation / Server         │
 │                                                    │
-│   ┌──────────────┐    ┌────────────────────────┐  │
-│   │  PowerShell   │───▶│  Console Output         │  │
+│   ┌─────────────-─┐    ┌────────────────────────┐  │
+│   │  PowerShell   │───▶│  Console Output        │  │
 │   │  (Admin)      │    └────────────────────────┘  │
 │   │               │                                 │
 │   │  Scripts:     │    ┌────────────────────────┐  │
 │   │  1. DiskSpace │───▶│  C:\Scripts\Output\     │  │
 │   │  2. EventLogs │    │   ├─ DiskReport.csv     │  │
 │   │  3. ResetPwd  │    │   ├─ EventErrors.csv    │  │
-│   └──────────────┘    │   └─ ResetLog.txt        │  │
+│   └───────────-───┘    │   └─ ResetLog.txt        │  │
 │                        └────────────────────────┘  │
 └──────────────────────────────────────────────────┘
 ```
@@ -602,11 +602,13 @@ Capture the following screenshots or text outputs to document your lab work.
 |---|----------|----------------|
 | 1 | PowerShell version output | Screenshot of `$PSVersionTable` |
 | 2 | Execution policy list | Screenshot of `Get-ExecutionPolicy -List` |
-| 3 | Disk space report — console | Screenshot of `.\Get-DiskSpaceReport.ps1` output |
+| 3 | Disk space report — console | Screenshot of `.\Get-DiskSpaceReport.ps1` output — [View sample output](../../docs/screenshots/lab05-disk-report-output.txt) |
 | 4 | Disk space report — CSV file | Screenshot of `Import-Csv .\Output\DiskReport.csv` piped to `Format-Table` |
-| 5 | Event log export — console | Screenshot showing the export count or "no events" message |
+| 5 | Event log export — console | Screenshot showing the export count or "no events" message — [View sample output](../../docs/screenshots/lab05-event-log-export.txt) |
 | 6 | Event log export — CSV contents | Screenshot of `Import-Csv .\Output\EventErrors.csv` piped to `Select -First 5` then `Format-Table` |
 | 7 | Password reset — confirmation prompt | Screenshot showing the warning banner and `YES` prompt |
-| 8 | Password reset — success message | Screenshot of the "Password has been reset successfully" output |
+| 8 | Password reset — success message | Screenshot of the "Password has been reset successfully" output — [View sample output](../../docs/screenshots/lab05-password-reset-log.txt) |
 | 9 | Password reset — log file | Screenshot of `Get-Content .\Output\ResetLog.txt` |
 | 10 | Cleanup confirmation | Screenshot showing test user removed or VM snapshot restored |
+
+- [ ] All 10 evidence items above captured and available in `docs/screenshots/`

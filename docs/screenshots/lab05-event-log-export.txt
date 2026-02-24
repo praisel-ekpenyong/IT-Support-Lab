@@ -1,0 +1,16 @@
+# Simulated output — IT Support Lab Portfolio
+# Replace this with actual command output from your lab environment
+
+PS C:\Scripts> .\Export-EventLogs.ps1
+Exported 14 event(s) to C:\Scripts\Output\EventErrors.csv
+
+
+PS C:\Scripts> Import-Csv "C:\Scripts\Output\EventErrors.csv" | Select-Object -First 5 | Format-Table -AutoSize
+
+LogName TimeCreated              Source                    EventID Message
+------- -----------              ------                    ------- -------
+System  1/15/2025 2:15:03 PM    Service Control Manager   7034    The Print Spooler service terminated unexpectedly...
+System  1/15/2025 1:55:44 PM    Disk                      7       The device \Device\Harddisk0\DR0 has a bad block...
+System  1/15/2025 11:22:10 AM   DCOM                      10016   The application-specific permission settings do...
+System  1/15/2025 10:44:31 AM   DriverFrameworks-UserMode 10110   Device WpdBusEnumRoot\UMB\2&37c186b&0&STORAGE... 
+Application 1/15/2025 9:03:12 AM .NET Runtime              1026    Application: svchost.exe Framework Version: v4.0...

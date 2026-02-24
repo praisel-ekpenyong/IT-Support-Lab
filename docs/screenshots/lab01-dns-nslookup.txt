@@ -1,0 +1,17 @@
+# Simulated output — IT Support Lab Portfolio
+# Replace this with actual command output from your lab environment
+
+C:\Users\labuser>nslookup homelab.local
+Server:  DC-SERVER01.homelab.local
+Address:  192.168.1.10
+
+Name:    homelab.local
+Address:  192.168.1.10
+
+
+C:\Users\labuser>nslookup DC-SERVER01.homelab.local
+Server:  DC-SERVER01.homelab.local
+Address:  192.168.1.10
+
+Name:    DC-SERVER01.homelab.local
+Address:  192.168.1.10

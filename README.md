@@ -13,6 +13,7 @@ This portfolio demonstrates hands-on IT support skills through 6 structured labs
 | Skills Matrix | — | [View Skills](docs/skills-matrix.md) |
 | Resume Bullets | 6 | [View Resume Bullets](docs/resume-bullets.md) |
 | STAR Stories | 4 | [View STAR Stories](docs/star-stories.md) |
+| Evidence | 18 | [View Evidence](docs/screenshots/) |
 
 ## Labs Overview
 
@@ -71,6 +72,12 @@ Tickets and incidents are cross-referenced where applicable, linking related sce
 **Hiring managers:** Start with the [Quick Start](#hiring-manager-quick-start) table above, then explore individual labs or the [Skills Matrix](docs/skills-matrix.md) for a consolidated view of demonstrated competencies. Each lab includes step-by-step documentation and screenshots.
 
 **Fellow learners:** Feel free to browse the labs for study reference. The [templates/](templates/) directory contains reusable templates for tickets, incidents, and lab write-ups.
+
+## Live Demo
+
+> 🎥 **Video walkthrough coming soon** — A short screen recording demonstrating Lab 01 (Active Directory Basics) will be linked here, showing live VM interaction including user creation, group membership management, and domain join.
+
+To request a live demo or schedule a walkthrough call, feel free to reach out via GitHub.
 
 ---
 

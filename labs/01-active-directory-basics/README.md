@@ -288,21 +288,38 @@ After completing the build, verify each component is functioning:
 
 5. **Security groups simplify permission management at scale.** Assigning permissions to groups rather than individual users makes onboarding, offboarding, and department transfers significantly easier — add or remove the user from the relevant group instead of updating permissions on every resource.
 
+## Lessons From Mistakes
+
+**Mistake: Setting the client DNS to 8.8.8.8 instead of the domain controller IP**
+
+During my first attempt to join WS-CLIENT01 to the domain, I configured the client's Preferred DNS Server as `8.8.8.8` (Google's public DNS) instead of `192.168.1.10` (the domain controller). When I ran the domain join wizard and entered `homelab.local`, I immediately received the error: *"The following error occurred attempting to join the domain 'homelab.local': The specified domain either does not exist or could not be contacted."*
+
+My first instinct was to check whether the DC was running, but `ping 192.168.1.10` succeeded — the VM was reachable. The real issue became clear when I ran:
+
+```
+nslookup homelab.local
+```
+
+The response came back from `8.8.8.8` instead of `192.168.1.10`, and there was no answer for `homelab.local` — a public DNS server has no knowledge of a private internal domain. As soon as I opened the network adapter properties on the client and corrected the Preferred DNS Server to `192.168.1.10`, the `nslookup` returned the correct IP and the domain join succeeded on the next attempt.
+
+**Key takeaway:** Before attempting a domain join, always run `nslookup <domain>` from the client. The response must come from the domain controller's IP. If it comes from any other address, fix the DNS setting first.
+
 ## Evidence Checklist
 
 Capture the following screenshots or command outputs to document the completed lab:
 
 - [ ] **AD DS role installed** — Server Manager dashboard showing AD DS and DNS roles with green status indicators
 - [ ] **Domain Controller promotion** — `Get-ADDomainController` output showing `DC-SERVER01` as a Global Catalog server for `homelab.local`
-- [ ] **OU structure** — ADUC tree view expanded to show IT, HR, Finance, and Disabled_Accounts OUs
-- [ ] **Users created** — `Get-ADUser -Filter * | Select-Object Name, SamAccountName, Enabled` output listing all four sample users
+- [ ] **OU structure** — ADUC tree view expanded to show IT, HR, Finance, and Disabled_Accounts OUs — [View sample output](../../docs/screenshots/lab01-ad-users-ou.txt)
+- [ ] **Users created** — `Get-ADUser -Filter * | Select-Object Name, SamAccountName, Enabled` output listing all four sample users — [View sample output](../../docs/screenshots/lab01-ad-users-ou.txt)
 - [ ] **Group membership** — `Get-ADGroupMember -Identity "SG_IT_Staff"` output showing jsmith and ajohnson
 - [ ] **GPO linked** — GPMC showing "Password and Lockout Policy" linked to `homelab.local` with settings visible in the Settings tab
 - [ ] **Password policy applied** — `net accounts` output on the DC showing minimum length 10 and lockout threshold 5
-- [ ] **GPO applied on client** — `gpresult /r` output from the client showing the GPO under "Applied Group Policy Objects"
+- [ ] **GPO applied on client** — `gpresult /r` output from the client showing the GPO under "Applied Group Policy Objects" — [View sample output](../../docs/screenshots/lab01-gpresult-output.txt)
 - [ ] **Shared folder permissions** — Properties dialog for `Finance_Reports` showing both Share and NTFS permission entries
 - [ ] **Client DNS configured** — `ipconfig /all` output from the client showing DNS server `192.168.1.10`
 - [ ] **Successful domain join** — `systeminfo | findstr Domain` output from the client showing `homelab.local`
 - [ ] **Domain user login** — Desktop screenshot of the client logged in as `HOMELAB\jsmith` (visible via `whoami` output)
 - [ ] **Share access verified** — File Explorer on the client showing `\\DC-SERVER01\Finance_Reports` opened as `cdavis`
 - [ ] **Account lockout test** — `Get-ADUser jsmith -Properties LockedOut` showing `LockedOut: True` after five failed attempts, followed by a successful `Unlock-ADAccount` command
+- [ ] **DNS resolution** — `nslookup homelab.local` resolving to 192.168.1.10 — [View sample output](../../docs/screenshots/lab01-dns-nslookup.txt)

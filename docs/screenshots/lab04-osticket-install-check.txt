@@ -1,0 +1,32 @@
+# Simulated output — IT Support Lab Portfolio
+# Replace this with actual command output from your lab environment
+
+labadmin@UBUNTU-SVR01:~$ systemctl status apache2
+● apache2.service - The Apache HTTP Server
+     Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
+     Active: active (running) since Wed 2025-01-15 09:00:12 UTC; 5h 23min ago
+       Docs: https://httpd.apache.org/docs/2.4/
+    Process: 812 ExecStart=/usr/sbin/apachectl start (code=exited, status=0/SUCCESS)
+   Main PID: 865 (apache2)
+      Tasks: 55 (limit: 2304)
+     Memory: 18.4M
+        CPU: 1.532s
+     CGroup: /system.slice/apache2.service
+             ├─865 /usr/sbin/apache2 -k start
+             ├─868 /usr/sbin/apache2 -k start
+             └─869 /usr/sbin/apache2 -k start
+
+Jan 15 09:00:12 UBUNTU-SVR01 systemd[1]: Starting The Apache HTTP Server...
+Jan 15 09:00:12 UBUNTU-SVR01 apachectl[812]: AH00558: apache2: Could not reliably determine...
+Jan 15 09:00:12 UBUNTU-SVR01 systemd[1]: Started The Apache HTTP Server.
+
+
+labadmin@UBUNTU-SVR01:~$ mysql --version
+mysql  Ver 15.1 Distrib 10.6.12-MariaDB, for debian-linux-gnu (x86_64) using  EditLine wrapper
+
+
+labadmin@UBUNTU-SVR01:~$ php -v
+PHP 8.1.27 (cli) (built: Dec 19 2023 20:35:47) (NTS)
+Copyright (c) The PHP Group
+Zend Engine v4.1.27, Copyright (c) Zend Technologies
+    with Zend OPcache v8.1.27, Copyright (c), by Zend Technologies
